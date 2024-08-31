@@ -3,9 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Mi blog | Miguel Angel Castrillon Balvin</title>
 </head>
 <body>
-    
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="bg-primary text-primary-foreground py-4 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Mi blog</h1>
+      <nav class="flex gap-4">
+        <a class="hover:underline" href="#sobre-mi">
+          Sobre mi
+        </a>
+        <a class="hover:underline" href="#hardware">
+          Hardware
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 grid grid-cols-[1fr_300px] gap-8 p-8" id="sobre-mi">
+    <div class="space-y-8">
+        <div class="w-full max-w-5xl mx-auto py-12 md:py-20">
+            <div class="flex items-center gap-6 mb-8">
+              <img
+                src="./assets/images/yo.jpg"
+                width="100"
+                height="100"
+                alt="Profile Picture"
+                class="rounded-full"
+                style="aspect-ratio: 100 / 100; object-fit: cover;"
+              />
+              <div class="grid gap-2">
+                <h1 class="text-3xl font-bold">Miguel Angel Castrillon Balvin</h1>
+                <p class="text-muted-foreground text-lg">Desarrollador de software</p>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <h2 class="text-2xl font-semibold">Sobre mí</h2>
+                <p>👨‍💻 Desarrollador de software | Ingeniero de Software en Formación</p>
+                <p>📍 Medellín, Colombia</p>
+                <p class="text-muted-foreground">
+                Hola, soy Miguel Ángel Castrillón Balvin, desarrollador de software con experiencia en Angular y Java Spring Boot. Tengo un título técnico en desarrollo de software y actualmente estoy cursando una ingeniería en Software y Datos en la Institucion Universitaria Digital de Antioquia.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h2 class="text-2xl font-semibold">Mis tecnologias</h2>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/python-svgrepo-com.svg"
+                      width="40"
+                      height="40"
+                      alt="Python"
+                      style="aspect-ratio: 40 / 40; object-fit: cover;"
+                      class="rounded"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/java-svgrepo-com.svg"
+                      width="40"
+                      height="40"
+                      alt="Adobe XD"
+                      class="rounded"
+                      style="aspect-ratio: 40 / 40; object-fit: cover;"
+                    />
+                    <span>Java</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/typescript-icon-svgrepo-com.svg"
+                      width="40"
+                      height="40"
+                      alt="Sketch"
+                      class="rounded"
+                      style="aspect-ratio: 40 / 40; object-fit: cover;"
+                    />
+                    <span>TypeScript</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/sql-database-generic-svgrepo-com.svg"
+                      width="40"
+                      height="40"
+                      alt="InVision"
+                      class="rounded"
+                      style="aspect-ratio: 40 / 40; object-fit: cover;"
+                    />
+                    <span>SQL</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/angular-icon-svgrepo-com.svg"
+                      width="40"
+                      height="40"
+                      alt="Zeplin"
+                      class="rounded"
+                      style="aspect-ratio: 40 / 40; object-fit: cover;"
+                    />
+                    <span>Angular</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img 
+                        src="./assets/images/spring-icon-svgrepo-com.svg" 
+                        width="40"
+                        height="40"
+                        alt="SpringBoot"
+                        class="rounded"
+                        style="aspect-ratio: 40 / 40; object-fit: cover;"    
+                    />
+                    <span>SpringBoot</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <h2 class="text-2xl font-bold" id="hardware">El hardware</h2>
+      <article class="grid grid-cols-[300px_1fr] gap-4">
+        <img
+          src="./assets/images/5059287.jpg"
+          width="300"
+          height="225"
+          alt="Processor"
+          class="rounded-md object-cover"
+          style="aspect-ratio: 300 / 225; object-fit: cover;"
+        />
+        <div>
+          <h2 class="text-xl font-bold">El Corazón de tu Computadora: Entendiendo el Procesador</h2>
+          <p class="text-muted-foreground">
+            El procesador, también conocido como CPU (Unidad Central de Procesamiento), es el cerebro que controla y coordina todas las operaciones del sistema, procesando información y ejecutando instrucciones a una velocidad asombrosa. Comprender cómo funciona el procesador y cómo elegir el adecuado para tus necesidades es fundamental para obtener el máximo rendimiento de tu PC.
+          </p>
+          <a href="procesador.html">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+            style="background: #000; color: #FFF; margin-top: 50px;">Leer mas →</button>
+          </a>
+          
+        </div>
+      </article>
+      <article class="grid grid-cols-[300px_1fr] gap-4">
+        <img
+          src="./assets/images/Disquetes-1024x682.jpg"
+          width="300"
+          height="225"
+          alt="Graphics Card"
+          class="rounded-md object-cover"
+          style="aspect-ratio: 300 / 225; object-fit: cover;"
+        />
+        <div>
+          <h2 class="text-xl font-bold">Primeras unidades de almacenamiento</h2>
+          <p class="text-muted-foreground">
+            Los disquetes fueron los primeros dispositivos de almacenamiento portátiles y extraíbles ampliamente disponibles. Esta es la razón por la cual la mayoría de los íconos "Guardar" lucen así, han sido diseñados a partir del disquete. Funcionan de la misma manera que los discos duros, aunque a una escala mucho menor.
+          </p>
+          <a href="index.html">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+            style="background: #000; color: #FFF; margin-top: 50px;">Leer mas →</button>
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="space-y-8">
+      <div class="bg-muted rounded-md p-4">
+        <h3 class="text-lg font-bold mb-2">Categorias</h3>
+        <ul class="space-y-1">
+          <li>
+            <a class="hover:underline" href="#">
+              Procesadores
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline" href="#">
+              Tarjetas graficas
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline" href="#">
+              Almacenamiento
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline" href="#">
+              Memoria
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline" href="#">
+              Placa madre
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-muted rounded-md p-4">
+        <h3 class="text-lg font-bold mb-2">Etiquetas</h3>
+        <div class="flex flex-wrap gap-2">
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            CPU
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            GPU
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            SSD
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            HDD
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            RAM
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            Overclocking
+          </div>
+          <div
+            class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+            data-v0-t="badge"
+          >
+            Rendimiento
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold">Suscribase a nuestras publicaciones</h4>
+        <form class="space-y-2">
+          <input
+            class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+            type="submit"
+            style="background: #000; color: #FFF;"
+          >
+            Suscribirse
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-muted text-muted-foreground py-6 px-4 md:px-6">
+    <div class="container mx-auto max-w-5xl flex items-center justify-between">
+      <p class="text-sm">© 2024 Miguel Angel Castrillon Balvin</p>
+      <nav class="flex items-center gap-4">
+        <a class="text-sm hover:underline" href="#">
+          Politica de privacidad
+        </a>
+        <a class="text-sm hover:underline" href="#">
+          Terminos de servicio
+        </a>
+      </nav>
+    </div>
+  </footer>
+</div>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
