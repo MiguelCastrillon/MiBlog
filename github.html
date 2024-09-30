@@ -11,11 +11,18 @@
     <!-- Header -->
     <header class="bg-primary text-primary-foreground py-4 px-6">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Mi Blog</h1>
-            <nav class="flex gap-4">
-                <a class="hover:underline" href="#sobre-mi">Sobre mí</a>
-                <a class="hover:underline" href="#tecnologia">Tecnología</a>
-            </nav>
+          <h1 class="text-2xl font-bold">Mi blog</h1>
+          <nav class="flex gap-4">
+            <a class="hover:underline" href="index.html#sobre-mi">
+              Sobre mi
+            </a>
+            <a class="hover:underline" href="index.html#hardware">
+              Hardware
+            </a>
+            <a class="hover:underline" href="index.html#tecnologias">
+              Tecnologias
+            </a>
+          </nav>
         </div>
     </header>
 
@@ -60,6 +67,8 @@
                 <p>Verifica la conexión con el comando:</p>
                 <pre class="bg-gray-100 p-4 rounded-lg"><code>git remote -v</code></pre>
                 <p>Para subir los cambios a tu repositorio remoto, utiliza:</p>
+                <pre class="bg-gray-100 p-4 rounded-lg"><code>git add nombre-del-archivo o . para todos los archivos</code></pre>
+                <pre class="bg-gray-100 p-4 my-1 rounded-lg"><code>git commit -m "Mensaje"</code></pre>
                 <pre class="bg-gray-100 p-4 rounded-lg"><code>git push -u origin main</code></pre>
                 <img src="assets/images/git-remote.png" alt="Agregar un repositorio remoto en Git" class="w-full h-auto rounded-lg my-4" />
             </section>
@@ -71,6 +80,19 @@
             </section>
         </article>
     </main>
+    <footer class="bg-muted text-muted-foreground py-6 px-4 md:px-6">
+        <div class="container mx-auto max-w-5xl flex items-center justify-between">
+          <p class="text-sm">© 2024 Miguel Angel Castrillon Balvin</p>
+          <nav class="flex items-center gap-4">
+            <a class="text-sm hover:underline" href="#">
+              Politica de privacidad
+            </a>
+            <a class="text-sm hover:underline" href="#">
+              Terminos de servicio
+            </a>
+          </nav>
+        </div>
+      </footer>
 
     <!-- Tailwind CSS Script -->
     <script src="https://cdn.tailwindcss.com"></script>
